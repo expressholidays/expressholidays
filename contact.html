@@ -132,68 +132,97 @@
                 <div class="row MaincontactForm">
                     <div class="col-md-12">
                         <form role="form" action="http://formspree.io/expresholidays@gmail.com" method="POST" action="#">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="usr">Your First Name<span>*</span></label>
-                                    <input type="name" class="form-control" id="usr" required placeholder="Your First Name">
-                                </div>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <i class="fa fa-user"></i>
+                                                    <input type="text" class="form-control" id="fname" name="fname" placeholder="First Name">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <i class="fa fa-user"></i>
+                                                    <input type="text" class="form-control" id="lname" name="lname" placeholder="Last Name">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <i class="fa fa-user"></i>
+                                                    <input type="text" class="form-control" id="uname" name="uname" placeholder="User Name">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <i class="fa fa-envelope-o"></i>
+                                                    <input type="email" class="form-control" id="uemail" name="uemail" placeholder="Email Address">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <i class="fa fa-lock"></i>
+                                                    <input type="password" class="form-control" id="upass" name="upass" placeholder="Password">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <i class="fa fa-lock"></i>
+                                                    <input type="password" class="form-control" id="mpass" name="mpass" placeholder="Re-enter Password">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <select name="gender" id="gender" class="form-control">
+                                                        <option value="0">Select Gender</option>
+                                                        <option value="Male">Male</option>
+                                                        <option value="Female">Female</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <i class="fa fa-globe"></i>
+                                                    <select name="country" id="country" class="form-control">
+                                                        <option value="Select Country">Select Country</option>
+                                                        <option value="Australia">Australia</option>
+                                                        <option value="Bangladesh">Bangladesh</option>
+                                                        <option value="Canada">Canada</option>
+                                                        <option value="Denmark">Denmark</option>
+                                                        <option value="England">England</option>
+                                                        <option value="USA">USA</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <i class="fa fa-calendar"></i>
 
-                                <div class="form-group">
-                                    <label for="SelectLocation">Your Location<span>*</span></label>
-                                    <select class="form-control" id="SelectLocation">
-                                        <option value="Option1">Asia</option>
-                                        <option value="Option2">Africa</option>
-                                        <option value="Option3">Australia</option>
-                                        <option value="Option4">America</option>
-                                        <option value="Option5">Europe</option>
-                                    </select>
-                                </div>
-                                
-                                <div class="form-group">
-                                    <label for="phone">Phone No.<span>*</span></label>
-                                    <input type="number" class="form-control" id="phone" required placeholder="Phone Number">
-                                </div>
-                                
-                                <div class="form-group">
-                                    <label for="email">Email<span>*</span></label>
-                                    <input type="email" class="form-control" required id="email" placeholder="Email">
-                                </div>
-                                
-                                <div class="form-group">
-                                    <label for="web">Website</label>
-                                    <input type="url" class="form-control" id="web" placeholder="Website">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="usr">Your Last Name<span>*</span></label>
-                                    <input type="name" class="form-control" id="usr" required placeholder="Your Last Name">
-                                </div>
-                               
-                                <div class="form-group">
-                                    <label for="destination">Destination<span>*</span></label>
-                                    <select class="form-control" id="destination">
-                                        <option value="Option1">China</option>
-                                        <option value="Option2">England</option>
-                                        <option value="Option3">France</option>
-                                        <option value="Option4">Japan</option>
-                                        <option value="Option5">North Korea</option>
-                                    </select>
-                                </div>
-                               
-                                <div class="form-group">
-                                    <label for="otherDestination">(If other destination)</label>
-                                    <input type="text" class="form-control" id="otherDestination" placeholder="If other destination">
-                                </div>
-                               
-                                <div class="form-group">
-                                    <label for="msg">Message<span>*</span></label>
-                                    <textarea id="msg" class="form-control" rows="3"></textarea>
-                                </div>
-                               
-                                <button type="submit" class="btn btn-danger btn-lg btn-block" value="send">Submit</button>
-                            </div>
-                        </form>
+                                                    <input type="text" name="date" id="date" class="form-control" placeholder="Date of Birth">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <i class="fa fa-mobile"></i>
+                                                    <input type="text" class="form-control Phone" id="Phone" placeholder="Phone">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="declear">
+                                                <p>Do you agree to the <a href="#">User Agreement</a> and <a href="#">Privacy Policy</a>, and terms incorporated therein? </p>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="submit" value="Register" name="register" class="register">
+                                        </div>
+                                    </form>
                     </div>
                 </div>
             </div>
