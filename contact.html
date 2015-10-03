@@ -26,7 +26,7 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="title">
-                            <h1><a href="http://expressholidays.github.io/">Express Holidays</a></h1>
+                            <h1><a href="index.html">Express Holidays</a></h1>
                             <p>Your expert in vacetions, travel and tourism.</p>
                         </div>
                     </div>
@@ -131,30 +131,34 @@
 
                 <div class="row MaincontactForm">
                     <div class="col-md-12">
-                        <form method="POST"  action="http://formspree.io/expresholidays@gmail.com">
+                        <form role="form" action="http://formspree.io/expresholidays@gmail.com" method="POST">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="name">Your First Name<span>*</span></label>
-                                    <input type="name" class="form-control" id="name" required placeholder="Your First Name">
+                                    <label for="usr">Your First Name<span>*</span></label>
+                                    <input type="name" class="form-control" id="usr" required placeholder="Your First Name">
                                 </div>
+
                                 <div class="form-group">
                                     <label for="SelectLocation">Your Location<span>*</span></label>
                                     <select class="form-control" id="SelectLocation">
-                                        <option value="Option1">Option1</option>
-                                        <option value="Option2">Option2</option>
-                                        <option value="Option3">Option3</option>
-                                        <option value="Option4">Option4</option>
-                                        <option value="Option5">Option5</option>
+                                        <option value="Option1">Asia</option>
+                                        <option value="Option2">Africa</option>
+                                        <option value="Option3">Australia</option>
+                                        <option value="Option4">America</option>
+                                        <option value="Option5">Europe</option>
                                     </select>
                                 </div>
+                                
                                 <div class="form-group">
-                                    <label for="phone">Phone No.</label>
-                                    <input type="text" class="form-control" id="phone" placeholder="Phone No.">
+                                    <label for="phone">Phone No.<span>*</span></label>
+                                    <input type="number" class="form-control" id="phone" required placeholder="Phone Number">
                                 </div>
-                               <div class="form-group">
+                                
+                                <div class="form-group">
                                     <label for="email">Email<span>*</span></label>
-                                    <input type="email" class="form-control" required id="Email" placeholder="Email">
+                                    <input type="email" class="form-control" required id="email" placeholder="Email">
                                 </div>
+                                
                                 <div class="form-group">
                                     <label for="web">Website</label>
                                     <input type="url" class="form-control" id="web" placeholder="Website">
@@ -162,26 +166,29 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="lastName">Your Last Name<span>*</span></label>
-                                    <input type="text" class="form-control" required id="lastName" placeholder="Your Last Name">
+                                    <label for="usr">Your last Name<span>*</span></label>
+                                    <input type="name" class="form-control" id="usr" required placeholder="Your First Name">
                                 </div>
+                               
                                 <div class="form-group">
-                                    <label for="SelectDestination">Destination<span>*</span></label>
-                                    <select class="form-control" required id="SelectDestination">
-                                        <option value="Option1">Option1</option>
-                                        <option value="Option2">Option2</option>
-                                        <option value="Option3">Option3</option>
-                                        <option value="Option4">Option4</option>
-                                        <option value="Option5">Option5</option>
+                                    <label for="destination">Destination<span>*</span></label>
+                                    <select class="form-control" id="destination">
+                                        <option value="Option1">China</option>
+                                        <option value="Option2">England</option>
+                                        <option value="Option3">France</option>
+                                        <option value="Option4">Japan</option>
+                                        <option value="Option5">North Korea</option>
                                     </select>
                                 </div>
+                               
                                 <div class="form-group">
                                     <label for="otherDestination">(If other destination)</label>
                                     <input type="text" class="form-control" id="otherDestination" placeholder="If other destination">
                                 </div>
+                               
                                 <div class="form-group">
-                                    <label for="message">Message<span>*</span></label>
-                                    <textarea id="message" class="form-control" rows="3"></textarea>
+                                    <label for="msg">Message<span>*</span></label>
+                                    <textarea id="msg" class="form-control" rows="3"></textarea>
                                 </div>
                                
                                <center> 
