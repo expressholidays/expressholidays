@@ -26,7 +26,7 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="title">
-                            <h1><a href="index.html">Express Holidays</a></h1>
+                            <h1><a href="http://expressholidays.github.io/">Express Holidays</a></h1>
                             <p>Your expert in vacetions, travel and tourism.</p>
                         </div>
                     </div>
@@ -131,62 +131,93 @@
 
                 <div class="row MaincontactForm">
                     <div class="col-md-12">
-                        <form method="POST"  action="http://formspree.io/expresholidays@gmail.com">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="name">Your First Name<span>*</span></label>
-                                    <input type="name" class="form-control" id="name" required placeholder="Your First Name">
+                        <form role="form" action="http://formspree.io/expresholidays@gmail.com" method="POST">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="First_name">Your First Name<span>*</span></label>
+                                        <input name="First_name" type="name" class="form-control" id="First_name" name="First_name" placeholder="First Name">
+                                    </div>
                                 </div>
-                                <div class="form-group">
-                                    <label for="SelectLocation">Your Location<span>*</span></label>
-                                    <select class="form-control" id="SelectLocation">
-                                        <option value="Option1">Option1</option>
-                                        <option value="Option2">Option2</option>
-                                        <option value="Option3">Option3</option>
-                                        <option value="Option4">Option4</option>
-                                        <option value="Option5">Option5</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="phone">Phone No.</label>
-                                    <input type="text" class="form-control" id="phone" placeholder="Phone No.">
-                                </div>
-                               <div class="form-group">
-                                    <label for="email">Email<span>*</span></label>
-                                    <input type="email" class="form-control" required id="Email" placeholder="Email">
-                                </div>
-                                <div class="form-group">
-                                    <label for="web">Website</label>
-                                    <input type="url" class="form-control" id="web" placeholder="Website">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="Last_name">Your Last Name<span>*</span></label>
+                                        <input name="Last_name" type="text" class="form-control" id="Last_name" name="Last_name" placeholder="Last Name">
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="lastName">Your Last Name<span>*</span></label>
-                                    <input type="text" class="form-control" required id="lastName" placeholder="Your Last Name">
+
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="Your_Location">Your Location<span>*</span></label>
+                                        <select name="Your_Location" id="Your_Location" class="form-control">
+                                            <option value="Select Country">Select Country</option>
+                                            <option value="Australia">Australia</option>
+                                            <option value="Bangladesh">Bangladesh</option>
+                                            <option value="Canada">Canada</option>
+                                            <option value="Denmark">Denmark</option>
+                                            <option value="England">England</option>
+                                            <option value="USA">USA</option>
+                                        </select>
+                                    </div>
                                 </div>
-                                <div class="form-group">
-                                    <label for="SelectDestination">Destination<span>*</span></label>
-                                    <select class="form-control" required id="SelectDestination">
-                                        <option value="Option1">Option1</option>
-                                        <option value="Option2">Option2</option>
-                                        <option value="Option3">Option3</option>
-                                        <option value="Option4">Option4</option>
-                                        <option value="Option5">Option5</option>
-                                    </select>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="Your_Destination">Your Destination<span>*</span></label>
+                                        <select name="Your_Destination" id="Your_Destination" class="form-control">
+                                            <option value="Select Country">Select Country</option>
+                                            <option value="Australia">Australia</option>
+                                            <option value="Bangladesh">Bangladesh</option>
+                                            <option value="Canada">Canada</option>
+                                            <option value="Denmark">Denmark</option>
+                                            <option value="England">England</option>
+                                            <option value="USA">USA</option>
+                                        </select>
+                                    </div>
                                 </div>
-                                <div class="form-group">
-                                    <label for="otherDestination">(If other destination)</label>
-                                    <input type="text" class="form-control" id="otherDestination" placeholder="If other destination">
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="usr">Phone Number</label>
+                                        <input type="text" class="form-control Phone" id="Phone" placeholder="Phone">
+                                    </div>
                                 </div>
-                                <div class="form-group">
-                                    <label for="message">Message<span>*</span></label>
-                                    <textarea id="message" class="form-control" rows="3"></textarea>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="If_Other_Destionation">(If Other Destionation)</label>
+                                        <input type="text" class="form-control" id="If_Other_Destionation" name="If_Other_Destionation" placeholder="If Other Destionation">
+                                    </div>
                                 </div>
-                               
-                               <center> 
-                                    <button type="submit" class="btn btn-danger btn-lg btn-block" value="send">Submit</button>
-                               </center>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="uemail">Email</label>
+                                        <input type="email" class="form-control" id="uemail" name="uemail" placeholder="Email Address">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="uweb">Website</label>
+                                        <input type="url" name="uweb" id="uweb" class="form-control" placeholder="Website">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="mess">Message <span class="star">*</span></label>
+                                        <textarea name="mess" id="mess" cols="30" rows="5" class="form-control" required=""></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row text-center">
+                                <div class="col-md-offset-3 col-sm-6">
+                                    <div class="form-group text-center">
+                                        <input class="btn btn-danger btn-lg btn-block" type="submit" value="Submit" name="Submit" class="Submit">
+                                    </div>
+                                </div>
                             </div>
                         </form>
                     </div>
